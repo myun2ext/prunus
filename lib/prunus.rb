@@ -1,3 +1,4 @@
+require 'nokogiri'
 require "prunus/version"
 require "prunus/document"
 
