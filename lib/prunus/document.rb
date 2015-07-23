@@ -7,10 +7,10 @@ class Prunus::Document < Nokogiri::HTML::Document
   def initialize
     super
 
-    @html = Node.new "html"
-    add_child @html
-    @head = Head.new
-    @body = Body.new
+    @html = Nokogiri::XML::Node.new "html", self
+    self.root = @html
+    @head = Head.new self
+    @body = Body.new self
     html.add_child @head
     html.add_child @body
   end
