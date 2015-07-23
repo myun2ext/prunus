@@ -1,5 +1,5 @@
 require "prunus/version"
 
-module Prunus
+class Prunus
   # Your code goes here...
 end
